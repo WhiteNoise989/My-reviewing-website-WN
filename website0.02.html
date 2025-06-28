@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Media Review website</title>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=open-sauce-one@400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sauce One', sans-serif;
+      background-color:
+#f5be49; 
+    }
+
+    .container {
+      display: flex;
+      padding: 40px;
+      gap: -10px;
+
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      margin-right: 250px;
+    }
+
+    .nav-button {
+      padding: 80px 60px;
+      font-size: 40.9px;
+      font-weight:bold;
+      background-color: white;
+      border:3px solid #333;
+      border-radius: 20px;
+      box-shadow: 20px 20px 0 #222;
+      cursor: pointer;
+      transition: transform 0.1s ease;
+      text-decoration: none;
+      color: #333;
+      display: inline-block;
+      text-align: center;
+      width: 180px;
+    }
+
+    .nav-button:hover {
+      transform: scale(1.05);
+    }
+
+
+    .sidebar button {
+      padding: 100px 100px;
+      font-size: 35px;
+      font-weight: bold;
+      background-color: white;
+      border: 1px solid #333;
+      border-radius: 15px;
+      box-shadow: 15px 15px 0 #222;
+      cursor: pointer;
+      transition: transform 0.1s ease;
+    }
+
+    .sidebar button:hover {
+      transform: scale(1.05);
+    }
+
+    .main-window {
+      background-color: white;
+      width: 2000px;
+      height: 500px;
+      border-radius: 20px;
+      box-shadow: 30px 30px 0 #222;
+      position: relative;
+      overflow: hidden;
+
+    }
+
+    .browser-bar {
+      background-color: white;
+      border-bottom: 10px solid #333;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .circle {
+      font-size: 18px;
+      border: 1px solid #333;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 22px;
+    }
+
+    .content-box {
+      padding: 70px;
+      height: calc(100% - 200px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+        <a href="animeshows.html" class="nav-button">ANIME/TV SHOWS</a>
+        <a href="movies.html" class="nav-button">MOVIES</a>
+        <a href="books.html" class="nav-button">BOOKS</a>
+      </div>
+
+    <div class="main-window">
+      <div class="browser-bar">
+        <span class="circle">✕</span>
+        <span class="circle">➕</span>
+        <span class="circle">➖</span>
+      </div>
+      <div class="content-box">
+        This is a website where I review stuff
+      </div>
+    </div>
+  </div>
